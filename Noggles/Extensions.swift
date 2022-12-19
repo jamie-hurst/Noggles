@@ -18,8 +18,3 @@ extension ShapeStyle where Self == Color {
     }
 }
 
-extension View {
-    func nogglesIconStyle() -> some View {
-        modifier(NogglesIcon())
-    }
-}

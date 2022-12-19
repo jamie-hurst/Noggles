@@ -12,7 +12,7 @@
 		7D085D8D292ACCB800AEEA6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D085D8C292ACCB800AEEA6B /* Assets.xcassets */; };
 		7D085D90292ACCB800AEEA6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D085D8F292ACCB800AEEA6B /* Preview Assets.xcassets */; };
 		7D085D97292B4D6100AEEA6B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D085D96292B4D6100AEEA6B /* Extensions.swift */; };
-		7D085DB8292D7DF900AEEA6B /* NogglesIcon-ViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D085DB7292D7DF900AEEA6B /* NogglesIcon-ViewModifier.swift */; };
+		7D3B05342930881F0063088D /* NogglesButton-ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3B05332930881F0063088D /* NogglesButton-ButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		7D085D8F292ACCB800AEEA6B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7D085D96292B4D6100AEEA6B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7D085DB4292D6E2A00AEEA6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		7D085DB7292D7DF900AEEA6B /* NogglesIcon-ViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NogglesIcon-ViewModifier.swift"; sourceTree = "<group>"; };
+		7D3B05332930881F0063088D /* NogglesButton-ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NogglesButton-ButtonStyle.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +59,7 @@
 				7D085DB4292D6E2A00AEEA6B /* Info.plist */,
 				7D085D88292ACCB700AEEA6B /* NogglesApp.swift */,
 				7D085D8A292ACCB700AEEA6B /* ContentView.swift */,
-				7D085DB7292D7DF900AEEA6B /* NogglesIcon-ViewModifier.swift */,
+				7D3B05332930881F0063088D /* NogglesButton-ButtonStyle.swift */,
 				7D085D96292B4D6100AEEA6B /* Extensions.swift */,
 				7D085D8C292ACCB800AEEA6B /* Assets.xcassets */,
 				7D085D8E292ACCB800AEEA6B /* Preview Content */,
@@ -145,10 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D085DB8292D7DF900AEEA6B /* NogglesIcon-ViewModifier.swift in Sources */,
 				7D085D8B292ACCB700AEEA6B /* ContentView.swift in Sources */,
 				7D085D97292B4D6100AEEA6B /* Extensions.swift in Sources */,
 				7D085D89292ACCB700AEEA6B /* NogglesApp.swift in Sources */,
+				7D3B05342930881F0063088D /* NogglesButton-ButtonStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

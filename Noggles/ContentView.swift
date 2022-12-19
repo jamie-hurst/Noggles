@@ -26,26 +26,20 @@ struct ContentView: View {
                 LazyVGrid(columns: adaptiveColumns, spacing: 20) {
                     ForEach(noggles, id: \.self) { noggle in
                         ZStack {
-                            Button {
+                            Button(noggle) {
                                 copyToClipboard(noggle: noggle)
-                            } label: {
-                                
-                                ZStack {
-                                    Rectangle()
-                                        .nogglesIconStyle()
-                                    
-                                    Text("\(noggle)")
-                                        .foregroundColor(.nounsRed)
-                                        .font(.title)
-                                }
                             }
+                            .buttonStyle(NogglesButton())
                             .padding(.bottom)
                         }
                     }
                 }
             }
+            .background(.nounsRed)
             .navigationTitle(buttonText)
             .navigationBarTitleDisplayMode(.inline)
+            .toolbarBackground(Color.nounsYellow, for: .navigationBar)
+            .preferredColorScheme(.light)
         }
         
     }
@@ -53,9 +47,7 @@ struct ContentView: View {
     
     func copyToClipboard(noggle: String) {
         pasteboard.string = noggle
-        
         buttonText = "copied ✓"
-        
         // After 1.5 seconds, change the title back to the original text
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
             buttonText = "⌐◨-◨"
