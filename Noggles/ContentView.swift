@@ -10,6 +10,8 @@ import CoreHaptics
 
 
 struct ContentView: View {
+    @Environment(\.scenePhase) private var scenePhase
+    
     @State private var buttonText = "⌐◨-◨"
     @State private var engine: CHHapticEngine?
     
@@ -38,7 +40,9 @@ struct ContentView: View {
                     }
                 }
             }
-            .onAppear(perform: prepareHaptics)
+            .onChange(of: scenePhase) { phase in
+                prepareHaptics()
+            }
             .background(.nounsRed)
             .navigationTitle(buttonText)
             .navigationBarTitleDisplayMode(.inline)
