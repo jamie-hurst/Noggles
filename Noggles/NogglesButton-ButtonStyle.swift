@@ -10,15 +10,15 @@ import SwiftUI
 struct NogglesButton: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .frame(width: 170, height: 170)
+            .font(.largeTitle)
+            .frame(width: 150, height: 150)
             .background(.nounsYellow)
             .cornerRadius(30)
+            .shadow(color: .black, radius: 0, x: (configuration.isPressed ? 0 : 8), y: (configuration.isPressed ? 0 : 8))
             .overlay(
                 RoundedRectangle(cornerRadius: 30)
                     .strokeBorder(.black, lineWidth: 4)
             )
-            .font(.largeTitle)
-            .scaleEffect(configuration.isPressed ? 1.07 : 1)
-//            .animation(.easeOut(duration: 0.2), value: configuration.isPressed)
+            .offset(x: (configuration.isPressed ? 8 : 0), y: (configuration.isPressed ? 8 : 0))
     }
 }
