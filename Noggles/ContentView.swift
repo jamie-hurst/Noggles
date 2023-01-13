@@ -16,7 +16,7 @@ struct ContentView: View {
     @State private var engine: CHHapticEngine?
     
     private let pasteboard = UIPasteboard.general
-    private let noggles = ["⌐◨-◨", "◧-◧¬", "⌐◧-◧", "⌐⁞⁚⁞-⁞⁚⁞", "⌐◫-◫", "⌐◪-◪", "⌐◮-◮", "⌐♥-♥", "⌐🄶-🄼", "⌐ⓝ°ⓒ"]
+    private let noggles = ["⌐◨-◨", "◧-◧¬", "⌐◧-◧", "⌐🄶-🄼", "⌐⁞⁚⁞-⁞⁚⁞", "⌐◫-◫", "⌐◪-◪", "⌐◮-◮", "⌐♥-♥", "⌐ⓝ°ⓒ"]
     
     // Conform to size of smallest element
     private let adaptiveColumns = [
@@ -44,7 +44,7 @@ struct ContentView: View {
             .onChange(of: scenePhase) { phase in
                 prepareHaptics()
             }
-            .background(.nounsRed)
+            .background(.nounsYellow)
             .navigationTitle(buttonText)
             .navigationBarTitleDisplayMode(.inline)
             .toolbarBackground(Color.nounsYellow, for: .navigationBar)

@@ -12,7 +12,7 @@ struct NogglesButton: ButtonStyle {
         configuration.label
             .font(.largeTitle)
             .frame(width: 150, height: 150)
-            .background(.nounsYellow)
+            .background(.nounsLightYellow)
             .cornerRadius(30)
             .shadow(color: .black, radius: 0, x: (configuration.isPressed ? 0 : 8), y: (configuration.isPressed ? 0 : 8))
             .overlay(
