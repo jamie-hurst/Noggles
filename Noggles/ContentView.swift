@@ -18,7 +18,7 @@ struct ContentView: View {
     @State private var engine: CHHapticEngine?
     @State private var noggles = ["⌐◨-◨", "◧-◧¬", "⌐◧-◧", "⌐🄶-🄼", "⌐⁞⁚⁞-⁞⁚⁞", "⌐◫-◫", "⌐◪-◪", "⌐◮-◮", "⌐♥-♥", "⌐ⓝ°ⓒ"]
     
-    private let nogglesDefault = ["⌐◨-◨", "◧-◧¬", "⌐◧-◧", "⌐🄶-🄼", "⌐⁞⁚⁞-⁞⁚⁞", "⌐◫-◫", "⌐◪-◪", "⌐◮-◮", "⌐♥-♥", "⌐ⓝ°ⓒ"]
+    private let nogglesDefaultOrder = ["⌐◨-◨", "◧-◧¬", "⌐◧-◧", "⌐🄶-🄼", "⌐⁞⁚⁞-⁞⁚⁞", "⌐◫-◫", "⌐◪-◪", "⌐◮-◮", "⌐♥-♥", "⌐ⓝ°ⓒ"]
     private let pasteboard = UIPasteboard.general
     
     
@@ -61,13 +61,10 @@ struct ContentView: View {
         
     }
     
-    
-    
-    
     // Toggle shuffle for Noggles
     func toggleNoggleShuffle() {
-        if noggles != nogglesDefault {
-            noggles = nogglesDefault
+        if noggles != nogglesDefaultOrder {
+            noggles = nogglesDefaultOrder
         } else {
             noggles = noggles.shuffled()
         }
@@ -81,7 +78,7 @@ struct ContentView: View {
     }
     
     func loadUserDefaults() {
-        noggles = userDefaults.object(forKey: "noggles") as? [String] ?? nogglesDefault
+        noggles = userDefaults.object(forKey: "noggles") as? [String] ?? nogglesDefaultOrder
     }
     
     // Copy Functionality
