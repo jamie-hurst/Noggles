@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+// Defines a ButtonStyle called NogglesButton
 struct NogglesButton: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label

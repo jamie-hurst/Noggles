@@ -60,10 +60,10 @@
 			children = (
 				7D085DB4292D6E2A00AEEA6B /* Info.plist */,
 				7D085D88292ACCB700AEEA6B /* NogglesApp.swift */,
-				7D3B05332930881F0063088D /* NogglesButton-ButtonStyle.swift */,
 				7D085D8A292ACCB700AEEA6B /* ContentView.swift */,
-				7DF1D4CD297250120001333C /* DeviceShake-ViewModifier.swift */,
 				7D085D96292B4D6100AEEA6B /* Extensions.swift */,
+				7DF1D4CD297250120001333C /* DeviceShake-ViewModifier.swift */,
+				7D3B05332930881F0063088D /* NogglesButton-ButtonStyle.swift */,
 				7D085D8C292ACCB800AEEA6B /* Assets.xcassets */,
 				7D085D8E292ACCB800AEEA6B /* Preview Content */,
 			);
